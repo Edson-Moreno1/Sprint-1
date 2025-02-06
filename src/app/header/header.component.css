@@ -1,0 +1,59 @@
+.iconos {
+ background-color: black ;
+ display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+.left-section, .right-section {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espacio entre elementos */
+}
+
+.encabezados {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 8px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+        padding: 20px;
+}
+#main-menu ul li {
+    display: inline;
+    list-style: none;
+    padding: 10px 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    
+
+}
+ #main-menu a{
+    text-decoration: none;
+    color: white;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    gap: 150px;
+    font-size: 15px;
+    
+ }
+
+ .estancias {
+    background-color: #D3D3D3;
+    font-family: 'Montserrat', sans-serif;
+    padding: 25px;
+
+ }
+.estancias h2 {
+    text-align: center;
+    font-size: 25px;
+    margin: 10px;
+}
+.estancias p {
+    text-align: center;
+    font-size: 15px;
+}

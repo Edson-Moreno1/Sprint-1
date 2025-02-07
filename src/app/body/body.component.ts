@@ -8,4 +8,16 @@ import { Component } from '@angular/core';
 })
 export class BodyComponent {
 
+  //Definir varianles
+mainimage: string = '/Casa portada.webp';
+
+
+img1: string = '/Casa portada.webp';
+img2: string = '/recamara.webp';
+img3: string = '/sala.webp';
+
+changemainimage(selectedimage: string): void {
+  this.mainimage = selectedimage;
+
+}
 }

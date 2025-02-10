@@ -1,4 +1,4 @@
-<section>
+<section class="section">
 <div class="galeria">
 
   <!--Asignar Imagen principal-->
@@ -6,13 +6,81 @@
 <!--Fin de la asginacion de la imagen principal-->
   <!--Asignar miniaturas-->
   <div class="image-1">
-<img src="{{img1}}" alt="Casa-portada" class="img-1"/> <!--Miniatura1-->
-<img src="{{img2}}" alt="recámara" class="img-1"/> <!--Miniatura2-->
-<img src="{{img3}}" alt="sala" class="img-1"/> <!--Miniatura3-->
+<img src="{{img1}}" alt="Casa-portada" class="img-1" (click)="changemainimage(img1)"> <!--Miniatura1-->
+<img src="{{img2}}" alt="recámara" class="img-1" (click)="changemainimage(img2)"> <!--Miniatura2-->
+<img src="{{img3}}" alt="sala" class="img-1" (click)="changemainimage(img3)"> <!--Miniatura3-->
 </div>
 <!--Fin de la asignacion de miniaturas-->
 
 
   </div>
+
+<div class="formulario">
+<div class="formulario-1">
+<div class="formulario-1-left">
+<p>HUÉSPEDES</p>
+</div>
+<div class="formulario-1-right">
+<button (click)="cambiarHuespedes(-1)">-</button>
+<span>{{huespedes}}</span>
+<button (click)="cambiarHuespedes(1)">+</button>
+</div>
+</div> <!--Fin de form1-->
+<div class="formulario-2">
+  <div class="formulario-2-left">
+<p>NOCHES</p>
+  </div>
+  <div class="formulario-2-right">
+<button (click)="cambiarNoches(-1)">-</button>
+<span>{{noches}}</span>
+<button (click)="cambiarNoches(1)">+</button>
+  </div>
+</div> <!--Fin de form1-->
+<div class="extras">
+  <hr>
+  <h2>
+    EXTRAS
+  </h2>
+</div>
+
+<!--Checkboxes de extras-->
+<div class="checkbox">
+  <label>
+    <input type="checkbox" [(ngModel)]="mascota">+ MASCOTA $250.00 MXM
+  </label>
+</div>
+
+  <div class="checkbox">
+    <label>
+      <input type="checkbox" [(ngModel)]="calefaccion">+ CALEFACCIÓN $500.00 MXM
+    </label>
+  </div>
+<div class="checkbox">
+  <label>
+    <input type="checkbox" [(ngModel)]="ruta">+ RUTA DE MONTAÑA $150 MXM
+  </label>
+  </div>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox" [(ngModel)]="senderismo">+ SENDERIMOS $200 MXM
+    </label>
+  </div>
+    <div class="checkbox">
+      <label>
+        <input type="checkbox" [(ngModel)]="visita">+ VISITA LA CASCADA $50 MXM
+      </label>
+    </div>
+    <hr>
+<!--Total con impuestod-->
+ <div class="total">
+  <h3 class="total-left">TOTAL CON IMPUESTOS:</h3>
+  <h3 class="total-right">${{getTotal()}} MXM</h3>
+ </div>
+ <div class="reservar">
+  <button >Reservar</button>
+</div>
+</div> <!--Fin de formulario-->
+
+
 
 </section>

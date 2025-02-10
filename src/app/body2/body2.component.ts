@@ -8,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class Body2Component {
 
+  // Definir imagenes
+
+  imga: string = '/ESTANCIA-1.png';
+  imgb: string = '/ESTANCIA-2.png';
+  imgc: string = '/ESTANCIA-3.png';
+
 }
